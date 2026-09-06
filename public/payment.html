@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>پرداخت | Concertino</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Concert<span>ino</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="payment-container">
+
+    <div class="payment-card">
+
+        <h1>
+            💳 پرداخت بلیت
+        </h1>
+
+        <p
+            style="color:#64748b;margin:10px 0 25px"
+        >
+            این صفحه پرداخت کاملاً نمایشی است.
+        </p>
+
+
+        <div
+            id="orderSummary"
+            class="order-summary"
+        >
+            در حال بارگذاری...
+        </div>
+
+
+        <form id="paymentForm">
+
+            <div class="form-group">
+
+                <label>
+                    شماره کارت
+                </label>
+
+                <input
+                    type="text"
+                    maxlength="16"
+                    placeholder="0000 0000 0000 0000"
+                    required
+                >
+
+            </div>
+
+            <div class="detail-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        CVV2
+                    </label>
+
+                    <input
+                        type="text"
+                        maxlength="4"
+                        placeholder="123"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        تاریخ انقضا
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="MM / YY"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    رمز دوم
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="رمز دوم نمایشی"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                class="btn btn-primary"
+                type="submit"
+            >
+                پرداخت نمایشی
+            </button>
+
+        </form>
+
+
+        <div id="successBox"></div>
+
+    </div>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
